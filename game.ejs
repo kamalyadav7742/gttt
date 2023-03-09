@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+  integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- link css -->
+  <link rel="stylesheet" type="text/css" href="../css/game.css">
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+  
+
+  </head>
+  <body>
+  
+  <%-include('./common/header.ejs') %>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 bg">
+              <div class="row">
+                <div class="col-md-2 cntt">
+                  <p class="p1">LATEST GAMES</p>
+                </div>
+              </div>   
+
+            </div>
+        </div>
+    </div>
+  
+
+  <!-- GAME -->
+
+
+  <div class="container-fluid">
+  <div class="row">
+     <div class="col-lg-12 text-center my-2">
+         <h4>Our Gaming Section</h4>
+     </div>
+  </div>
+  <div class="portfolio-menu mt-2 mb-4">
+     <ul>
+        <li class="btn btn-outline-warning active" id="ac" data-filter="*">All</li>
+        <li class="btn btn-outline-warning ms-2" data-filter=".gts">Cars Games</li>
+        <li class="btn btn-outline-warning ms-2" data-filter=".lap">Puzzle</li>
+        <li class="btn btn-outline-warning text ms-2" data-filter=".selfie">Staright</li>
+     </ul>
+  </div>
+
+  <div class="portfolio-item row">
+     <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="fancylight popup-btn" data-fancybox-group="light"> 
+        <img class="img-fluid" src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="images about games">
+        </a>
+     </div>
+    
+     <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+        </a>
+     </div>
+
+     <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://images.unsplash.com/photo-1551103782-8ab07afd45c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="https://images.unsplash.com/photo-1551103782-8ab07afd45c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+        </a>
+     </div>
+
+     <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://images.unsplash.com/photo-1560419015-7c427e8ae5ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="https://images.unsplash.com/photo-1560419015-7c427e8ae5ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+        </a>
+     </div>
+
+     <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://images.unsplash.com/photo-1590845947667-381579052389?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="https://images.unsplash.com/photo-1590845947667-381579052389?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+        </a>
+     </div>
+
+     <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://images.unsplash.com/photo-1498736297812-3a08021f206f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=879&q=80" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="https://images.unsplash.com/photo-1498736297812-3a08021f206f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=879&q=80" alt="">
+        </a>
+     </div>
+
+     <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://images.unsplash.com/photo-1586165368502-1bad197a6461?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=958&q=80" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="https://images.unsplash.com/photo-1586165368502-1bad197a6461?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=958&q=80" alt="">
+        </a>
+     </div>
+
+     <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://images.unsplash.com/photo-1519326844852-704caea5679e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=967&q=80" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="https://images.unsplash.com/photo-1519326844852-704caea5679e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=967&q=80" alt="">
+        </a>
+     </div>
+     <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://images.unsplash.com/photo-1529154691717-3306083d869e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="https://images.unsplash.com/photo-1529154691717-3306083d869e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+        </a>
+     </div>
+
+     <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://images.unsplash.com/photo-1605870445919-838d190e8e1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="https://images.unsplash.com/photo-1605870445919-838d190e8e1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80" alt="">
+        </a>
+     </div>
+
+     <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://image.freepik.com/free-photo/girl-smiling-making-auto-photo-with-her-friends-around_1139-593.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="https://image.freepik.com/free-photo/girl-smiling-making-auto-photo-with-her-friends-around_1139-593.jpg" alt="">
+        </a>
+     </div>
+
+     <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://images.unsplash.com/photo-1482855549413-2a6c9b1955a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg" alt="">
+        </a>
+     </div>
+
+     <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://images.unsplash.com/photo-1635173250597-00863d9ce454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="https://images.unsplash.com/photo-1635173250597-00863d9ce454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+        </a>
+     </div>
+
+     <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://images.unsplash.com/photo-1592156668899-2cc871c9ac2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="https://images.unsplash.com/photo-1592156668899-2cc871c9ac2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+        </a>
+     </div>
+
+     <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://images.unsplash.com/photo-1551431009-a802eeec77b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="https://images.unsplash.com/photo-1551431009-a802eeec77b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="">
+        </a>
+     </div>
+
+     <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://images.unsplash.com/photo-1528819622765-d6bcf132f793?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="https://images.unsplash.com/photo-1528819622765-d6bcf132f793?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+        </a>
+     </div>
+
+     <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://image.freepik.com/free-photo/celebration-concept-close-up-portrait-happy-young-beautiful-african-woman-black-t-shirt-smiling-with-colorful-party-balloon-yellow-pastel-studio-background_1258-934.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="https://image.freepik.com/free-photo/celebration-concept-close-up-portrait-happy-young-beautiful-african-woman-black-t-shirt-smiling-with-colorful-party-balloon-yellow-pastel-studio-background_1258-934.jpg" alt="">
+        </a>
+     </div>
+
+     <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://image.freepik.com/free-photo/pretty-woman-showing-arm-muscles_23-2148056021.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="https://image.freepik.com/free-photo/pretty-woman-showing-arm-muscles_23-2148056021.jpg" alt="">
+        </a>
+     </div>
+
+     <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://image.freepik.com/free-photo/blank-colorful-adhesive-notes-against-wooden-wall-with-office-stationeries-laptop_23-2148052717.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="https://image.freepik.com/free-photo/blank-colorful-adhesive-notes-against-wooden-wall-with-office-stationeries-laptop_23-2148052717.jpg" alt="">
+        </a>
+     </div>
+
+     <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://image.freepik.com/free-photo/happy-woman-having-video-call-using-laptop-office_23-2148056211.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="https://image.freepik.com/free-photo/happy-woman-having-video-call-using-laptop-office_23-2148056211.jpg" alt="">
+        </a>
+     </div>
+
+     <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://image.freepik.com/free-psd/laptop-mockup-table-with-plants_23-2147955548.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="https://image.freepik.com/free-psd/laptop-mockup-table-with-plants_23-2147955548.jpg" alt="">
+        </a>
+     </div>
+
+     <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://image.freepik.com/free-photo/blank-colorful-adhesive-notes-against-wooden-wall-with-office-stationeries-laptop_23-2148052717.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="https://image.freepik.com/free-photo/blank-colorful-adhesive-notes-against-wooden-wall-with-office-stationeries-laptop_23-2148052717.jpg" alt="">
+        </a>
+     </div>
+
+     <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://image.freepik.com/free-psd/woman-using-laptop-smartphone_53876-76350.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="https://image.freepik.com/free-psd/woman-using-laptop-smartphone_53876-76350.jpg" alt="">
+        </a>
+     </div>
+
+     <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg" alt="">
+        </a>
+     </div>
+
+     <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://image.freepik.com/free-photo/young-couple-taking-selfie-mobile-phone-against-blue-background_23-2148056292.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="https://image.freepik.com/free-photo/young-couple-taking-selfie-mobile-phone-against-blue-background_23-2148056292.jpg" alt="">
+        </a>
+     </div>
+
+     <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://images.unsplash.com/photo-1528819622765-d6bcf132f793?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="https://image.freepik.com/free-photo/close-up-blonde-woman-sitting-sofa-using-laptop-with-blank-white-screen_23-2148028738.jpg" alt="">
+        </a>
+     </div>
+
+     <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+        <a href="https://images.unsplash.com/photo-1528819622765-d6bcf132f793?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="fancylight popup-btn" data-fancybox-group="light">
+        <img class="img-fluid" src="https://image.freepik.com/free-photo/group-happy-friends-taking-selfie-cellphone_23-2147859575.jpg" alt="">
+        </a>
+     </div>
+     
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <p class="p2">About Our Games</p>
+    <div class="col-md-12">
+      <iframe width="100%" height="400" src="https://www.youtube.com/embed/jEjP6p39Z7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    </div>
+  </div>
+</div>
+
+<%-include('./common/footer.ejs') %>
+
+
+
+
+
+<script>
+          // $('.portfolio-item').isotope({
+        //  	itemSelector: '.item',
+        //  	layoutMode: 'fitRows'
+        //  });
+        $('.portfolio-menu ul li').click(function(){
+         	$('.portfolio-menu ul li').removeClass('active');
+         	$(this).addClass('active');
+         	
+         	var selector = $(this).attr('data-filter');
+         	$('.portfolio-item').isotope({
+         		filter:selector
+         	});
+
+         	return  false;
+         });
+         
+         $(document).ready(function() {
+         var popup_btn = $('.popup-btn');
+         popup_btn.magnificPopup({
+         type : 'image',
+         gallery : {
+         	enabled : true
+         }
+         });
+         });
+</script>
+   
+    
+
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

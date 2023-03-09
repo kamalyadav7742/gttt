@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="../css/stylee.css">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+	<!-- cdn -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+		integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- ajex -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+	<!--  -->
+
+	
+</head>
+
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand" style="text-decoration: none;">
+			<i class='bx bxs-smile'></i>
+			<span class="text">AdminHub</span>
+		</a>
+		<ul class="side-menu top" style="margin-left: -10%;">
+			<li class="active">
+				<a href="#" style="text-decoration: none;">
+					<i class='bx bxs-dashboard'></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-shopping-bag-alt'></i>
+					<span class="text">My Store</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-doughnut-chart'></i>
+					<span class="text">Analytics</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-message-dots'></i>
+					<span class="text">Message</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-group'></i>
+					<span class="text">Team</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu" style="margin-left: -10%;">
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog'></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle'></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu'></i>
+			<a href="#" class="nav-link">Categories</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell'></i>
+				<span class="num">8</span>
+			</a>
+
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h2>Dashboard</h2>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right'></i></li>
+						<li>
+							<a class="active" href="#">Home</a>
+						</li>
+					</ul>
+				</div>
+				<!-- <a href="#" class="btn-download">
+					<i class='bx bxs-cloud-download'></i>
+					<span class="text">Download PDF</span>
+				</a> -->
+
+
+				<button type="button" class="btn btn-outline-primary btn-sm mt-2" data-bs-toggle="modal"
+					data-bs-target="#exampleModal">
+					Add Games
+				</button>
+			</div>
+
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header bg-dark">
+							<h1 class="modal-title fs-5 mx-auto text-white" id="exampleModalLabel">Add Game</h1>
+							<button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+
+						<div class="modal-body">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-4">
+										<label for="fname">Game i.d.</label>
+									</div>
+									<div class="col-md-8">
+										<!-- <form method="post" action="/auto"> -->
+
+										<input type="text" id="game_id" name="game_id" placeholder="Enter i.d.">
+									</div>
+
+								</div><br>
+								<div class="row">
+									<div class="col-md-4">
+										<label for="lname">Game Name</label>
+									</div>
+
+									<div class="col-md-8">
+										<input type="text" id="game_name" name="game_name" placeholder="Game name..">
+									</div>
+								</div><br>
+
+								<div class="row">
+									<div class="col-md-4">
+										<label for="country">Main-Category</label>
+									</div>
+
+									<div class="col-md-8">
+										<select id="category" name="category">
+											<option value="Games">Games</option>
+											<option value="PlayStation">PlayStation</option>
+											<option value="Controller">Controller</option>
+										</select>
+									</div>
+								</div><br>
+								<div class="row">
+									<div class="col-md-4">
+										<label for="country">Game-Type</label>
+									</div>
+									<div class="col-md-8">
+										<select id="Type" name="Type">
+											<option value="action">Action</option>
+											<option value="adventure">Adventure</option>
+											<option value="stage">Stage</option>
+										</select>
+									</div>
+								</div>
+								<br>
+							</div>
+						</div>
+						<div class="modal-footer bg-dark">
+							<a href="/index"> <button type="submit" id="form_submit" class="btn btn-outline-light">Add
+								Game</button></a>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			</div>
+
+			<!-- <ul class="box-info">
+				<li>
+					<i class='bx bxs-calendar-check'></i>
+					<span class="text">
+						<h3>1020</h3>
+						<p>New Order</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-group'></i>
+					<span class="text">
+						<h3>2834</h3>
+						<p>Visitors</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-dollar-circle'></i>
+					<span class="text">
+						<h3>$2543</h3>
+						<p>Total Buyer</p>
+					</span>
+				</li>
+			</ul> -->
+
+			<!-- II -->
+
+				<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" value=""></button>
+						</div>
+						<div class="modal-body">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-4">
+										<form action="/update" method="post">
+										<label for="fname">Game i.d.</label>
+									</div>
+									<div class="col-md-8">
+											<div class="GFGclass" id="divGFG1"></div>
+
+									</div>
+
+								</div><br>
+								<div class="row">
+									<div class="col-md-4">
+										<label for="lname">Game Name</label>
+									</div>
+
+									<div class="col-md-8">
+										<div class="GFGclass" id="divGFG2"></div>
+
+									</div>
+								</div><br>
+
+								<div class="row">
+									<div class="col-md-4">
+										<label for="country">Main-Category</label>
+									</div>
+
+									<div class="col-md-8">
+
+										<div class="GFGclass" id="divGFG3"></div>
+										
+
+									</div>
+
+								</div><br>
+
+								<div class="row">
+									<div class="col-md-4">
+										<label for="country">Game-Type</label>
+									</div>
+
+									<div class="col-md-8">
+										<div class="GFGclass" id="divGFG4"></div>
+
+
+									</div>
+								</div>
+								<br>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<a href="/index"> <button type="submit"class="btn btn-primary">Add Game</button></a>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+
+			<div class="container-fluid" style="margin-top: -3%;">
+				<div class="row">
+					<div class="col-md-12">
+
+
+						<% if(data.length>0) { %>
+
+							<table
+								class="mt-5 w-100 table table-light cot mb-5  table-sm table-responsive table-hover-dark">
+
+								<tr style="border: 1px solid black;" >
+									<th class="border border-dark">S No.</th>
+									<th class="border border-dark">game_id</th>
+									<th class="border border-dark">game_name</th>
+									<th class="border border-dark">category</th>
+									<th class="border border-dark">Type</th>
+									<th class="text-center border border-dark">Edit</th>
+									<th class="text-center border border-dark">Delete</th>
+
+								</tr>
+
+								<% for(var i=0; i<data.length;i++){ %>
+									
+									<div>
+
+										<tr>
+											<td class="border border-dark">
+											<%= i %>
+										</td>
+										<td class="border border-dark game_id">
+											<%= data[i].game_id %>
+										</td>
+										<td class="border border-dark game_name">
+											<%= data[i].game_name %>
+										</td>
+										<td class="border border-dark category">
+											<%= data[i].category %>
+										</td>
+										<td class="border border-dark Type">
+											<%= data[i].Type %>
+										</td>
+									</div>
+										<td class="border border-dark text-center">
+											<!-- <a href='/edit/<%=data[i].id%>'><button type="button" class="btn btn-outline-light btn-sm"data-bs-toggle="modal" data-bs-target="#exampleModal1"data-bs-whatever="@getbootstrap"><i class="fa-regular fa-pen-to-square text-primary"></i></button></a>&nbsp; -->
+											
+											<button type="button" class="btn btn-outline-light btn-sm gfgselect"data-bs-toggle="modal" data-bs-target="#exampleModal1"data-bs-whatever="@getbootstrap">
+												<i class="fas fa-pen" style="color:#184e77;font-size: 13px;"></i>
+											</button>
+											
+										</td>
+										<td class="text-center border border-dark"><a href='/delete/<%= data[i].id %>'> <i class="fa-regular fa-trash-can text-danger"></i></a>
+										</td>
+									</tr>
+
+									<% } %>
+
+							</table>
+							<% } else { %>
+								no record found
+								<% } %>
+
+
+
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<script src="../js/script.js"></script>
+
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+			<script>
+				$(document).ready(function () {
+					$(document).on('click', '#form_submit', function () {
+						var game_id = document.getElementById("game_id").value
+						var game_name = document.getElementById("game_name").value
+						var category = document.getElementById("category").value
+						var Type = document.getElementById("Type").value
+						$.ajax({
+							url: "/auto",
+							method: "post",
+							data: {
+								game_id,
+								game_name: game_name,
+								category: category,
+								Type: Type
+							},
+							success: function (result) {
+								console.log(result)
+							}
+
+						});
+					});
+				});
+
+			</script>
+
+			<!-- edit -->
+			<script>
+                document.querySelector("#mobile_inpp").addEventListener("keypress", function (evt) {
+                    if (evt.which != 8 && evt.which != 0 && evt.which < 48 || evt.which > 57) {
+                        evt.preventDefault();
+                    }
+                });
+				
+            </script>
+
+			<script>
+                $(function () {
+                    // ON SELECTING ROW
+                    $(".gfgselect").click(function () {
+                        //FINDING ELEMENTS OF ROWS AND STORING THEM IN VARIABLES
+                        var a =
+                            $(this).parents("tr").find(".game_id ").text();
+
+                        var p1 = "";
+
+                        var b =
+                            $(this).parents("tr").find(".game_name ").text();
+
+                        var p2 = "";
+                        var c =
+                            $(this).parents("tr").find(".category").text();
+
+                        var p3 = "";
+
+                        var d =
+                            $(this).parents("tr").find(".Type").text();
+
+                        var p4 = "";
+
+                    
+                        // CREATING DATA TO SHOW ON MODEL
+                        p1 +=
+                            "<input type='text' style='height:34px;font-size: 13px;box-shadow: 0px 1px 10px rgb(211, 211, 211); ' min='0' disabled class='form-control' name='game_id' value=" + a + " id='a'>";
+                        p2 +=
+						"<input type='text' style='height:34px;font-size: 13px;box-shadow: 0px 1px 10px rgb(211, 211, 211); ' min='0'  disabled  class='form-control' name='category' value=" + b + " id='b'>";
+                        p3 +=
+                            "<input type='text' style='height:34px;font-size: 13px;box-shadow: 0px 1px 10px rgb(211, 211, 211); ' min='0'  disabled  class='form-control' name='game_name' value=" + c + " id='c'>";
+                        p4 +=
+                            "<input type='text' style='height:34px;font-size: 13px;box-shadow: 0px 1px 10px rgb(211, 211, 211); ' min='0' class='form-control' name='Type'  value=" + d + " id='d' id='mobile_inpp'>";
+                     
+
+
+                        $("#divGFG1").empty();
+                        $("#divGFG2").empty();
+                        $("#divGFG3").empty();
+                        $("#divGFG4").empty();
+                      
+
+                        $("#divGFG1").append(p1);
+                        $("#divGFG2").append(p2);
+                        $("#divGFG3").append(p3);
+                        $("#divGFG4").append(p4);
+                      
+
+                    });
+                });
+            </script>
+</body>
+
+</html>

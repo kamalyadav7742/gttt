@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.min.css"> -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <!-- cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+    }
+
+    tr th {
+      border: 1px solid black;
+      text-align: left;
+      padding: 2px;
+    }
+
+    tr td {
+      border: 1px solid black;
+      text-align: left;
+      padding: 2px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+
+    input[type=text],
+    select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+
+    label {
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+    }
+  </style>
+</head>
+
+<body>
+  <%- include('../admin/nav.ejs') %>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2" style="background: gray;">
+          <%- include('../admin/left.ejs') %>
+        </div>
+        <div class="col-md-10">
+          <!-- Button trigger modal -->
+          <div style="float: right;">
+            <% data.forEach (function(data){ %>
+              <% }) %>
+            <button type="button" class="btn btn-outline-primary btn-sm mt-2" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              Add Games
+            </button>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5 mx-auto" id="exampleModalLabel">Add Game</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <label for="fname">Game i.d.</label>
+                      </div>
+                      <div class="col-md-8">
+                        <!-- <form method="post" action="/auto"> -->
+
+                          <input type="text" id="game_id" name="game_id" placeholder="Enter i.d.">
+                      </div>
+
+                    </div><br>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <label for="lname">Game Name</label>
+                      </div>
+
+                      <div class="col-md-8">
+                        <input type="text" id="game_name" name="game_name" placeholder="Game name..">
+                      </div>
+                    </div><br>
+
+                    <div class="row">
+                      <div class="col-md-4">
+                        <label for="country">Main-Category</label>
+                      </div>
+
+                      <div class="col-md-8">
+                        <select id="category" name="category">
+                          <option value="Games">Games</option>
+                          <option value="PlayStation">PlayStation</option>
+                          <option value="Controller">Controller</option>
+                        </select>
+                      </div>
+
+                    </div><br>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <label for="country">Game-Type</label>
+                      </div>
+                      <div class="col-md-8">
+                        <select id="Type" name="Type">
+                          <option value="action">Action</option>
+                          <option value="adventure">Adventure</option>
+                          <option value="stage">Stage</option>
+                        </select>
+                      </div>
+                    </div>
+                    <br>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="/index" <button type="submit" id="form_submit" class="btn btn-primary">Add Game</button></a>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- II -->
+       
+
+          <% if(data.length>0) { %>
+
+            <table class="mt-5 w-100 ">
+
+              <tr>
+                <th>S No.</th>
+                <th>game_id</th>
+                <th>game_name</th>
+                <th>category</th>
+                <th>Type</th>
+                <th class="text-center">Edit</th>
+                <th class="text-center">Delete</th>
+                
+              </tr>
+
+              <% for(var i=0; i<data.length;i++){ %>
+
+                <tr>
+                  <td class="border border-dark">
+                    <%= i %>
+                  </td>
+                  <td class="border border-dark">
+                    <%= data[i].game_id %>
+                  </td>
+                  <td class="border border-dark">
+                    <%= data[i].game_name %>
+                  </td>
+                  <td class="border border-dark">
+                    <%= data[i].category %>
+                  </td>
+                  <td class="border border-dark">
+                    <%= data[i].Type %>
+                  </td>
+                  <td class="border border-dark text-center"><a href='/edit/<%=data[i].game_name %>'
+                   <button type="button" class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="fa-regular fa-pen-to-square text-primary"></i></button> &nbsp;
+                   
+                   
+                  </td>
+                  <td class="text-center">
+                    <a href='/delete/<%= data[i].id %>'><i class="fa-regular fa-trash-can text-danger"></i></a>
+                    
+                  </td>
+                </tr>
+
+                <% } %>
+
+            </table>
+            <% } else { %>
+              no record found
+              <% } %>
+
+              
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(document).on('click', '#form_submit', function () {
+          var game_id = document.getElementById("game_id").value
+          var game_name = document.getElementById("game_name").value
+          var category = document.getElementById("category").value
+          var Type = document.getElementById("Type").value
+          $.ajax({
+            url: "/auto",
+            method: "post",
+            data: {
+               game_id,
+              game_name: game_name,
+              category: category,
+              Type: Type
+            },
+            success: function (result) {
+              console.log(result)
+            }
+
+          });
+        });  
+      });
+
+    </script>
+</body>
+
+</html>
+
+
+
+

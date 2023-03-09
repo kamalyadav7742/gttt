@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+        <!-- cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+  integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css link -->
+
+  <link rel="stylesheet" type="text/css" href="../css/game.css">
+  <style>
+       input::placeholder {
+        color: blue;
+        opacity: 1;
+      }
+      /* input:placeholder-shown {
+        border: 1px solid #095484;
+      } */
+  </style>
+  </head>
+  <body class="bt1">
+
+    
+    <%-include('./common/header.ejs') %>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 re">
+              <div class="row">
+                <div class="col-md-3 cntt">
+                  <p id="p1" class="mt-1">GAMES REVIEWS</p>
+                </div>
+              </div>   
+
+            </div>
+        </div>
+    </div>
+
+
+  <!-- reviews game -->
+
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-md-6 mt-3">
+            <img src="../img/rt (5).jpg" class="img-fluid" alt="game1">
+
+        </div>
+
+        <div class="col-md-5 mt-3">
+            <p class="p10 mt-2">11.11.18 / in <span class="sp"> Games </span></p>
+            <p class="p11">RATING <span class="sp1"> 4.5</span> / 5</p>
+            <p class="p12 mt-1">Final Appocalipse</p>
+            <p class="p13">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.Vivamus volutpat nibh ac sollicitudin imperdiet. Donec scelerisque lorem sodales odio ultricies, nec rhoncus ex lobortis. Vivamus tincidunt sit amet sem id varius. Donec elementum aliquet tortor. Curabitur justo mi, efficitur sed eros aliquealiqua.....</p>
+        </div>
+    </div>
+  </div>
+  <!-- II -->
+
+
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-md-6 mt-3">
+            <img src="../img/rt (4).jpg" class="img-fluid" alt="game1">
+
+        </div>
+        
+        <div class="col-md-5 mt-3">
+            <p class="p10 mt-2">11.11.18 / in <span class="sp"> Games </span></p>
+            <p class="p11">RATING <span class="sp1"> 2.5</span> / 5</p>
+            <p class="p12 mt-1">The best online game is out now!</p>
+            <p class="p13">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.Vivamus volutpat nibh ac sollicitudin imperdiet. Donec scelerisque lorem sodales odio ultricies, nec rhoncus ex lobortis. Vivamus tincidunt sit amet sem id varius. Donec elementum aliquet tortor. Curabitur justo mi, efficitur sed eros aliquealiqua.....</p>
+        </div>
+    </div>
+  </div>
+
+  <!-- III -->
+
+  
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-md-6 mt-3">
+            <img src="../img/buy (6).jpg" class="img-fluid" alt="game1">
+
+        </div>
+        
+        <div class="col-md-5 mt-3">
+            <p class="p10 mt-2">11.11.18 / in <span class="sp"> Games </span></p>
+            <p class="p11">RATING <span class="sp1"> 3.0</span> / 5</p>
+            <p class="p12 mt-1">The game you’ve been waiting for is out now</p>
+            <p class="p13">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.Vivamus volutpat nibh ac sollicitudin imperdiet. Donec scelerisque lorem sodales odio ultricies, nec rhoncus ex lobortis. Vivamus tincidunt sit amet sem id varius. Donec elementum aliquet tortor. Curabitur justo mi, efficitur sed eros aliquealiqua....</p>
+        </div>
+    </div>
+  </div>
+
+  <!-- Subscribe -->
+
+  <div class="container-fluid">
+    <div class="row mt-5 justify-content-center">
+        <h2 id="p2">SUBSCRIBE TO OUR NEWSLETTER</h2>
+        <div class="col-md-11 text-center">
+
+            <form>
+                <div class="wt bg-transparent text-center">
+                    <input type="email" placeholder="ENTER YOUR E-MALE" class="form-control bg-transparent text-white" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+            </form>
+            
+            <div class="text-center mt-1">
+                <button type="button" class="btn btn-outline-light">SUBSCRIBE <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+        </div>
+
+
+    </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
